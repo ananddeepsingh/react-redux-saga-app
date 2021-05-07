@@ -1,0 +1,15 @@
+import { render, fireEvent, screen } from '@testing-library/react'
+import TodoInput from '../TodoInput';
+
+describe("TodoInput test", () => {
+  it("should not create new todo when input is blank", () => {
+    const mockAddTodo = jest.fn();
+    // render(<TodoInput addTodo={mockAddTodo} />);
+
+    // fireEvent.change(screen.getByPlaceholderText(/what needs to be done/i), {
+    //   target: { value: '' }
+    // })
+
+    expect([]).toBe([])
+  })
+})

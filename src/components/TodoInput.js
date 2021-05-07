@@ -8,12 +8,14 @@ const TodoInput = () => {
   let dispatch = useDispatch();
 
   const handleAddTodo = () => {
-    dispatch(addTodo({
-      id: Math.random(),
-      name
-    }))
+    if (name.length) {
+      dispatch(addTodo({
+        id: Math.random(),
+        name
+      }))
 
-    setName("");
+      setName("");
+    }
   }
 
   return (
